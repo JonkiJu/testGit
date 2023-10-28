@@ -198,11 +198,42 @@ console.log(2*4 != 8);      // це просто зрівнення НЕ РАВ�
 // GIT 
 
 
+// 20 УМОВИ
+
+if (4 == 9) {             // якщо 4 = 4 то код який в середині if виконується 
+    console.log('OK!');
+} else {                  // якщо 4 не = 4 тоді виконується ELSE
+  console.log('error');
+}
 
 
+// if (num<49){
+//   console.log('error');
+// } else if (num>100){
+//   console.log('Багато');
+// } else {
+// 	console.log('ok!');
+// }
+
+// (num === 50) ? console.log('ok!') : console.log('error');
+
+const num = 50;
 
 
-
+switch (num) {
+  case 49:
+      console.log('Не правильно');
+      break;
+  case 100:
+    console.log('Не правильно');
+      break;
+  case 50:
+    console.log('ПРАВИЛЬНО');
+      break;
+    default:
+      console.log('Не в цей раз');
+      break;
+}
 
 
 
