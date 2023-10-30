@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 'use strict';
 
 // a = 15;
@@ -198,11 +199,106 @@ console.log(2*4 != 8);      // це просто зрівнення НЕ РАВ�
 // GIT 
 
 
+// 20 УМОВИ
+
+if (4 == 9) {             // якщо 4 = 4 то код який в середині if виконується 
+	console.log('OK!');
+} else {                  // якщо 4 не = 4 тоді виконується ELSE
+	console.log('error');
+}
+
+
+// if (num<49){
+//   console.log('error');
+// } else if (num>100){
+//   console.log('Багато');
+// } else {
+// 	console.log('ok!');
+// }
+
+// (num === 50) ? console.log('ok!') : console.log('error');
+
+const num = 50;
+
+
+switch (num) {
+case 49:
+	console.log('Не правильно');
+	break;
+case 100:
+	console.log('Не правильно');
+	break;
+case 50:
+	console.log('ПРАВИЛЬНО');
+	break;
+default:
+	console.log('Не в цей раз');
+	break;
+}
+
+
+// УРОК 21
+
+
+
+// const hamburger = 5;
+// const fries = 0;
+
+// if(hamburger && fries) {
+// 	console.log('Я наївся');
+// }
+
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 1;
+
+// console.log(hamburger === 3 && cola && fries);
+
+
+// console.log(1 && 0);
+// console.log(1 && 5);
+// console.log(null && 5);
+// console.log(0 && 'asdasdasdasd');
+
+
+
+// if(hamburger === 3 && cola === 1 && fries) {
+// 	console.log('Всі наїлись');
+// } else {
+// 	console.log('Йдемо в інший заклад');
+// }
+
+
+
+// const hamburger = 3;
+// const fries = 0;
+// const cola = 0;
 
 
 
 
+// if(hamburger || cola || fries) {
+// 	console.log('Всі довольні');
+// } else {
+// 	console.log('Йдемо в інший заклад');
+// }
+
+
+// let johnReptort, alexReport, samReport, mariaReport = 'done';
+// console.log(johnReptort || alexReport || samReport || mariaReport);
 
 
 
 
+const hamburger = 0;
+const fries = 0;
+const cola = 0;
+const nuggets = 2;
+
+
+
+if(hamburger || cola || fries) {
+	console.log('Всі довольні');
+} else {
+	console.log('Йдемо в інший заклад');
+}
