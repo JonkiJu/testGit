@@ -218,28 +218,37 @@ if (4 == 9) {             // якщо 4 = 4 то код який в середи
 
 // (num === 50) ? console.log('ok!') : console.log('error');
 
-const num = 50;
+// const num = 50;
 
 
-switch (num) {
-case 49:
-	console.log('Не правильно');
-	break;
-case 100:
-	console.log('Не правильно');
-	break;
-case 50:
-	console.log('ПРАВИЛЬНО');
-	break;
-default:
-	console.log('Не в цей раз');
-	break;
-}
+// switch (num) {
+// case 49:
+// 	console.log('Не правильно');
+// 	break;
+// case 100:
+// 	console.log('Не правильно');
+// 	break;
+// case 50:
+// 	console.log('ПРАВИЛЬНО');
+// 	break;
+// default:
+// 	console.log('Не в цей раз');
+// 	break;
+// }
 
 
 // УРОК 21
 
+// є 5 сущновстів які завжди будуть давати FALSE
+// 0	пустра строка без пробілав		null	Nan		Undefind
 
+// Оператор і && завжди повертає перше нерпвдиве значення якщо воно є 
+// АБО
+// Повертає останнє правдиве значення
+
+// Оператор АБО || повертає перше правдиве значення
+// АБО 
+// Останнє неправдиве значення
 
 // const hamburger = 5;
 // const fries = 0;
@@ -290,15 +299,228 @@ default:
 
 
 
-const hamburger = 0;
-const fries = 0;
-const cola = 0;
-const nuggets = 2;
+// const hamburger = 3;
+// const fries = 4;
+// const cola = 0;
+// const nuggets = 2;
 
 
 
-if(hamburger || cola || fries) {
-	console.log('Всі довольні');
-} else {
-	console.log('Йдемо в інший заклад');
+// if(hamburger === 3 && cola === 2 || fries === 2 && nuggets) {
+// 	console.log('Всі довольні');
+// } else {
+// 	console.log('Йдемо в інший заклад');
+// }
+
+// console.log(hamburger === 3 && cola === 2 || fries === 4 && nuggets);
+
+
+// console.log(!0);
+
+
+
+// УРОК 22
+
+
+// let num = 50;
+
+// while (num < 55){
+// 	console.log(num);
+// 	num++;
+// }
+
+// for (num < 50;) {
+// 	console.log(num);
+// 	num++;
+// }
+
+
+// do {
+// 	console.log(num);
+// 	num++;
+// }
+// while (num < 55);
+
+
+// for (let i = 1; i < 8; i++) {				// буде спрацьовувати 7 раз, тому що переменноа I має досягти значення меньше 8, тобто 7 
+// 	console.log(num);
+// 	num++;
+// }
+
+// for (let i = 1; i < 10; i++) {				// буде спрацьовувати 7 раз, тому що переменноа I має досягти значення меньше 8, тобто 7 
+// 	if (i===6){
+// 		// break;
+// 		continue;
+// 	}
+// 	console.log(i);
+// }
+
+
+// УРОК 23
+
+// for (let i = 0; i<3; i++){
+// 	console.log(i);
+// 	for (let j = 0; j<3; j++){
+// 		console.log(j);
+		
+// 	}
+// }
+
+// // половина ялинки з зірочок
+// let result = '';
+// const length = 7;
+
+// for (let i =1; i < length; i++) {
+	
+// 	for (let j =0; j < i; j++) {
+// 		result += '*';
+// 	}
+
+// 	result += '\n';
+// }
+
+// console.log(result);
+
+
+
+first: for (let i = 0; i<3; i++){
+	console.log(`First level: ${i}`);
+	second: for (let j = 0; j<3; j++){
+		console.log(`Second level: ${j}`);
+		for (let k = 0; k<3; k++){
+			// if (k === 2) continue ;
+			console.log(`Third level: ${k}`);
+		}
+	}
 }
+
+
+// ЗАВДАННЯ 3
+
+
+for (let i=5; i<=10; i++) {
+	console.log(i);
+}
+
+for(let i=20; i>=10;i--) {
+	console.log(i);
+	if (i === 13) break;
+}
+   
+// for(let i=2; i<=10; i++) {
+// 	if(i % 2 === 0) 
+// 		console.log(i);
+// }
+
+
+
+
+// for (let i = 2; i <= 16; i++) {
+// 	if (i % 2 === 0) {
+// 		continue;
+// 	} else {
+// 		console.log(i);
+// 	}
+// }
+
+
+
+// let i = 2;
+// while (i <=16) {
+// 	if (i % 2 === 0){
+// 		i++;
+// 		continue;
+// 	}
+// 	else{
+// 		console.log(i);
+// 	}
+// 	i++;
+// }
+
+// const arr = [];
+
+// for (let i = 5; i <= 10; i++) {
+// 	arr[i - 5] = i;
+// }
+// console.log(arr);
+
+
+
+
+// ЗАВДАННЯ 4
+const arr = [5,6,7,8,9,10];
+const result = [];
+
+for (let i = 0; i < arr.length; i++) {
+	result[i]=arr[i];
+}
+
+console.log(result);
+
+
+// const arr = [5,6,7,8,9,10];
+const result = [5, 10, 'Shopping', 20, 'Homework'];
+
+for (let i = 0; i < result.length; i++) {
+	if (typeof result[i] === 'number') {
+		result[i] = result[i] * 2;
+	} else if (typeof result[i] === 'string') {
+		result[i] = `${result[i]} - done`;
+	}
+}
+
+console.log(result);
+
+
+
+
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+const result = [];
+
+for (let i=1; i <= data.length; i++) {
+	result[i - 1] = data[data.length - 1]
+}
+
+console.log(result);
+
+
+function thirdTask() {
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+    const result = [];
+
+    for (let i = 1; i <= data.length; i++) {
+        result[i - 1] = data[data.length - i]
+    }
+
+    console.log(result);
+    return result;
+}
+
+for(let i=20; i>=10;i--) {
+	console.log(i);
+	if (i === 13) break;
+}
+
+
+
+
+// ЗАДАЧА 4
+
+
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
+    }
+    for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+    result += "\n";
+}
+
+console.log(result)
+
+
+
