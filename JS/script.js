@@ -507,7 +507,7 @@ for(let i=20; i>=10;i--) {
 // ЗАДАЧА 4
 
 
-const lines = 5;
+const lines = 6;
 let result = '';
 
 for (let i = 0; i <= lines; i++) {
@@ -524,3 +524,141 @@ console.log(result)
 
 
 
+// УРОК 25 ФУНКЦІЇ 
+let num = 20;
+
+function showFirstMessage(text) {				// в круглих душках () Аргументи функції
+	console.log(text);
+	let num = 10;
+	console.log(num);							// Якщо функція шукає якусь змінну, то вона спочатку шукає її на локальному рівні тобто в самій функції, а вже потім поза її межами
+}
+
+showFirstMessage('Hello World');			// Якщо хочеш викликати функцію то треба ось це прописувати
+console.log(num);
+
+// function calc(a, b) {
+// 	return (a + b);
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(10, 6));
+
+
+function ret() {										// функція DECLARATION створюється до початку виконання скріпта 
+	let num=50;
+
+
+
+	return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+ 
+const logger = function() {									// Це є фунуція expression вона створюється лише коли до неї доходить черга
+	console.log('hello World')
+};
+
+logger();
+
+
+
+const calc = (a, b) => { return a + b };		// стрелочна функція
+
+
+// УРОК 26
+
+const usdCurr = 28;
+const discount = 0.9;
+
+function convert(amount, curr) {
+	return curr * amount;
+}
+
+function promotion(result) {
+	console.log(result * discount);
+}
+
+const res = convert(500, usdCurr);
+promotion(res);
+// УРОК 27 
+
+function test() {
+	for(let i = 0; i < 5; i++) {
+		console.log(i);
+		if(i === 3) return
+	}
+	console.log('done');
+}
+
+test();
+
+// ЗАДАЧА 6
+
+const peopleName = 'Антон';
+
+function sayHello(name) {
+	return `Привіт ${name}`;
+}
+
+sayHello(peopleName);
+
+
+
+
+
+const numberForTask = 5;
+
+function returnNeighboringNumbers (number) {
+	return (number - 1, number, number + 1);
+}
+
+returnNeighboringNumbers(numberForTask);
+
+
+function getMathResult(num, times) {
+    if (typeof(times) !== 'number' || times <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+           console.log(str += `${num * i}`) ;
+            // Тут без черточек в конце
+        } else {
+           console.log(str += `${num * i}---`) ;
+            // Это тоже самое, что и
+            // str = str + num * i + "---"
+        }
+    }
+
+    return str;
+}
+
+getMathResult(5, 3);
+
+
+
+function getMathResult (num, times) {
+	if (typeof(times) !== 'number' || times <= 0) {
+		return num;
+	}
+
+	let str = '';
+
+	for (let i = 1; i <= times; i++) {
+		if (i === times) {
+			(str += `${num * i}`)
+		}
+		else {
+			(str += `${num * i}---`)
+		}
+	}
+	return str;
+}
+
+getMathResult(10, 3);
