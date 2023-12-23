@@ -448,58 +448,58 @@ for(let i=20; i>=10;i--) {
 
 
 // ЗАВДАННЯ 4
-const arr = [5,6,7,8,9,10];
-const result = [];
-
-for (let i = 0; i < arr.length; i++) {
-	result[i]=arr[i];
-}
-
-console.log(result);
-
-
 // const arr = [5,6,7,8,9,10];
-const result = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
 
-for (let i = 0; i < result.length; i++) {
-	if (typeof result[i] === 'number') {
-		result[i] = result[i] * 2;
-	} else if (typeof result[i] === 'string') {
-		result[i] = `${result[i]} - done`;
-	}
-}
+// for (let i = 0; i < arr.length; i++) {
+// 	result[i]=arr[i];
+// }
 
-console.log(result);
+// console.log(result);
 
 
+// // const arr = [5,6,7,8,9,10];
+// const result = [5, 10, 'Shopping', 20, 'Homework'];
+
+// for (let i = 0; i < result.length; i++) {
+// 	if (typeof result[i] === 'number') {
+// 		result[i] = result[i] * 2;
+// 	} else if (typeof result[i] === 'string') {
+// 		result[i] = `${result[i]} - done`;
+// 	}
+// }
+
+// console.log(result);
 
 
-const data = [5, 10, 'Shopping', 20, 'Homework'];
-const result = [];
-
-for (let i=1; i <= data.length; i++) {
-	result[i - 1] = data[data.length - 1]
-}
-
-console.log(result);
 
 
-function thirdTask() {
-    const data = [5, 10, 'Shopping', 20, 'Homework'];
-    const result = [];
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
 
-    for (let i = 1; i <= data.length; i++) {
-        result[i - 1] = data[data.length - i]
-    }
+// for (let i=1; i <= data.length; i++) {
+// 	result[i - 1] = data[data.length - 1]
+// }
 
-    console.log(result);
-    return result;
-}
+// console.log(result);
 
-for(let i=20; i>=10;i--) {
-	console.log(i);
-	if (i === 13) break;
-}
+
+// function thirdTask() {
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     const result = [];
+
+//     for (let i = 1; i <= data.length; i++) {
+//         result[i - 1] = data[data.length - i]
+//     }
+
+//     console.log(result);
+//     return result;
+// }
+
+// for(let i=20; i>=10;i--) {
+// 	console.log(i);
+// 	if (i === 13) break;
+// }
 
 
 
@@ -507,34 +507,34 @@ for(let i=20; i>=10;i--) {
 // ЗАДАЧА 4
 
 
-const lines = 6;
-let result = '';
+// const lines = 6;
+// let result = '';
 
-for (let i = 0; i <= lines; i++) {
-    for (let j = 0; j < lines - i; j++) {
-        result += " ";
-    }
-    for (let j = 0; j < 2 * i + 1; j++) {
-        result += "*";
-    }
-    result += "\n";
-}
+// for (let i = 0; i <= lines; i++) {
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
+// }
 
-console.log(result)
+// console.log(result)
 
 
 
 // УРОК 25 ФУНКЦІЇ 
-let num = 20;
+// let num = 20;
 
-function showFirstMessage(text) {				// в круглих душках () Аргументи функції
-	console.log(text);
-	let num = 10;
-	console.log(num);							// Якщо функція шукає якусь змінну, то вона спочатку шукає її на локальному рівні тобто в самій функції, а вже потім поза її межами
-}
+// function showFirstMessage(text) {				// в круглих душках () Аргументи функції
+// 	console.log(text);
+// 	let num = 10;
+// 	console.log(num);							// Якщо функція шукає якусь змінну, то вона спочатку шукає її на локальному рівні тобто в самій функції, а вже потім поза її межами
+// }
 
-showFirstMessage('Hello World');			// Якщо хочеш викликати функцію то треба ось це прописувати
-console.log(num);
+// showFirstMessage('Hello World');			// Якщо хочеш викликати функцію то треба ось це прописувати
+// console.log(num);
 
 // function calc(a, b) {
 // 	return (a + b);
@@ -545,120 +545,316 @@ console.log(num);
 // console.log(calc(10, 6));
 
 
-function ret() {										// функція DECLARATION створюється до початку виконання скріпта 
-	let num=50;
+// function ret() {										// функція DECLARATION створюється до початку виконання скріпта 
+// 	let num=50;
 
 
 
-	return num;
-}
+// 	return num;
+// }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
 
  
-const logger = function() {									// Це є фунуція expression вона створюється лише коли до неї доходить черга
-	console.log('hello World')
+// const logger = function() {									// Це є фунуція expression вона створюється лише коли до неї доходить черга
+// 	console.log('hello World')
+// };
+
+// logger();
+
+
+
+// const calc = (a, b) => { return a + b };		// стрелочна функція
+
+
+// // УРОК 26
+
+// const usdCurr = 28;
+// const discount = 0.9;
+
+// function convert(amount, curr) {
+// 	return curr * amount;
+// }
+
+// function promotion(result) {
+// 	console.log(result * discount);
+// }
+
+// const res = convert(500, usdCurr);
+// promotion(res);
+// // УРОК 27 
+
+// function test() {
+// 	for(let i = 0; i < 5; i++) {
+// 		console.log(i);
+// 		if(i === 3) return
+// 	}
+// 	console.log('done');
+// }
+
+// test();
+
+// // ЗАДАЧА 6
+
+// const peopleName = 'Антон';
+
+// function sayHello(name) {
+// 	return `Привіт ${name}`;
+// }
+
+// sayHello('Антон');
+
+
+
+
+
+// const numberForTask = 5;
+
+// function returnNeighboringNumbers (number) {
+// 	return (number - 1, number, number + 1);
+// }
+
+// returnNeighboringNumbers(numberForTask);
+
+
+// function getMathResult(num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
+
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i === times) {
+//            console.log(str += `${num * i}`) ;
+//             // Тут без черточек в конце
+//         } else {
+//            console.log(str += `${num * i}---`) ;
+//             // Это тоже самое, что и
+//             // str = str + num * i + "---"
+//         }
+//     }
+
+//     return str;
+// }
+
+// getMathResult(5, 3);
+
+
+
+// function getMathResult (num, times) {
+// 	if (typeof(times) !== 'number' || times <= 0) {
+// 		return num;
+// 	}
+
+// 	let str = '';
+
+// 	for (let i = 1; i <= times; i++) {
+// 		if (i === times) {
+// 			(str += `${num * i}`)
+// 		}
+// 		else {
+// 			(str += `${num * i}---`)
+// 		}
+// 	}
+// 	console.log(str);
+// 	return str;
+// }
+
+// getMathResult(10, 3);
+
+
+
+
+
+
+
+
+// function sayHello (name) {
+// 	return (`Привіт ${name}`);
+// }
+
+// sayHello(Andriy);
+
+
+// const number = 5;
+
+// function returnNeighboringNumbers (num) {
+// 	for (let i = 1, i > num )
+// }
+
+
+
+// УРОК 28
+const str = 'test';
+
+console.log(str.length) // виводить кілкість символів
+
+const str = 'test';
+
+console.log(str[2]);
+
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+
+
+console.log(str);
+
+
+
+
+
+const fruit = 'some fruit';
+
+console.log(fruit.indexOf('fruit'));
+
+const logg = 'hello world';
+
+// console.log(logg.slice(6))
+
+// console.log(logg.substring(6, 11));
+
+// console.log(logg.substr(6, 5));
+
+const num = 12.2;
+console.log(Math.round(num))
+
+const test = '12.2px';
+console.log(parseInt(test))
+console.log(parseFloat(test))
+
+
+
+// LESSON 31
+
+function first() {
+	// do somithing
+	setTimeout(function)							// CALLBACK дає нам можливість завершити першу функцію і лише після цього буде запуск другої функції
+}
+
+
+function learnJS(lang, callbac) {
+	console.log(`Я учу ${lang}`);
+	callbac();
+}
+
+function done() {
+	console.log('Я пройшов урок!');
+}
+
+learnJS('Javascript', done);
+
+
+// LESSON 32. Объекты, деструктуризация объектов (ES6)
+
+const obj = new Object();
+const options = {
+	name: 'test',
+	width: 1024,
+	height: 1024,
+	colors: {
+		border: 'black',
+		bg: 'red'
+	},
+	makeTest: function() {
+		console.log('test');
+	}
 };
 
-logger();
+options.makeTest();
+
+console.log(Object.keys(options).length);
+
+const {border, bg} = options.colors;							// деструктизація обєктів 
+console.log(border)
+// delete options.name;
+
+// console.log(options);
+
+// for (let key in options) {							// for in для того щоб переглядати обєкти через for of обєкти неможна перебирати
+// 	if (typeof(options[key]) === 'object')	{
+// 		for (let i in options[key]) {
+// 			console.log(`Свойства ${i} имеет значения ${options[key][i]}`);
+// 			counter++;
+// 		}
+// 	}	else {
+// 			console.log(`Свойства ${key} имеет значения ${options[key]}`);
+// 			counter++;
+// counter++;
+// 	}						
+// }
+
+// console.log(counter);
 
 
+// LESSON 33
 
-const calc = (a, b) => { return a + b };		// стрелочна функція
+const arr = [1, 2, 3, 6, 8];
 
 
-// УРОК 26
+arr.forEach(function(item, i, arr) {
+	console.log(`${i}: ${item} всередині масива ${arr}`)			// також один з методів як вивести всі елементи масива, ним це можна зробити більш точно
+});																	// Break i continue тут непрацюють
 
-const usdCurr = 28;
-const discount = 0.9;
 
-function convert(amount, curr) {
-	return curr * amount;
+// arr.map
+// arr.every/some
+// arr.filter															// Методи трансформації масивів
+// arr.reduce 
+
+// arr[99] = 0;
+// console.log(arr.length); // виводить довжину масиву а якщо точніте то це осатнній індекс масива +1 якщо в масиві 10 індексів 0,1,2 і тд але останній 99 то виведе 100
+
+
+// arr.pop();		// Видалає останній елемент з масива
+// arr.push(10);	// Добавляє останній елемент з масива   ці методи не дуже часто використовуються
+
+
+// console.log(arr);
+
+for (let value of arr) {
+	console.log(value);
+}
+											// два варіанти як можна вивести всі елементи масива
+for (let i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
 }
 
-function promotion(result) {
-	console.log(result * discount);
-}
 
-const res = convert(500, usdCurr);
-promotion(res);
-// УРОК 27 
-
-function test() {
-	for(let i = 0; i < 5; i++) {
-		console.log(i);
-		if(i === 3) return
-	}
-	console.log('done');
-}
-
-test();
-
-// ЗАДАЧА 6
-
-const peopleName = 'Антон';
-
-function sayHello(name) {
-	return `Привіт ${name}`;
-}
-
-sayHello(peopleName);
+const 
 
 
 
 
 
-const numberForTask = 5;
-
-function returnNeighboringNumbers (number) {
-	return (number - 1, number, number + 1);
-}
-
-returnNeighboringNumbers(numberForTask);
-
-
-function getMathResult(num, times) {
-    if (typeof(times) !== 'number' || times <= 0) {
-        return num;
-    }
-
-    let str = '';
-
-    for (let i = 1; i <= times; i++) {
-        if (i === times) {
-           console.log(str += `${num * i}`) ;
-            // Тут без черточек в конце
-        } else {
-           console.log(str += `${num * i}---`) ;
-            // Это тоже самое, что и
-            // str = str + num * i + "---"
-        }
-    }
-
-    return str;
-}
-
-getMathResult(5, 3);
 
 
 
-function getMathResult (num, times) {
-	if (typeof(times) !== 'number' || times <= 0) {
-		return num;
-	}
 
-	let str = '';
 
-	for (let i = 1; i <= times; i++) {
-		if (i === times) {
-			(str += `${num * i}`)
-		}
-		else {
-			(str += `${num * i}---`)
-		}
-	}
-	return str;
-}
 
-getMathResult(10, 3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
