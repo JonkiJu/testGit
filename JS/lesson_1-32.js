@@ -790,41 +790,7 @@ console.log(border)
 // console.log(counter);
 
 
-// LESSON 33
 
-const arr = [1, 2, 3, 6, 8];
-
-
-arr.forEach(function(item, i, arr) {
-	console.log(`${i}: ${item} всередині масива ${arr}`)			// також один з методів як вивести всі елементи масива, ним це можна зробити більш точно
-});																	// Break i continue тут непрацюють
-
-
-// arr.map
-// arr.every/some
-// arr.filter															// Методи трансформації масивів
-// arr.reduce 
-
-// arr[99] = 0;
-// console.log(arr.length); // виводить довжину масиву а якщо точніте то це осатнній індекс масива +1 якщо в масиві 10 індексів 0,1,2 і тд але останній 99 то виведе 100
-
-
-// arr.pop();		// Видалає останній елемент з масива
-// arr.push(10);	// Добавляє останній елемент з масива   ці методи не дуже часто використовуються
-
-
-// console.log(arr);
-
-for (let value of arr) {
-	console.log(value);
-}
-											// два варіанти як можна вивести всі елементи масива
-for (let i = 0; i < arr.length; i++) {
-	console.log(arr[i]);
-}
-
-
-const 
 
 
 
