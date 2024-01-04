@@ -1,0 +1,12 @@
+.box {
+    padding: 20px;
+    background-color: red;
+    max-width: 100px;
+    
+}
+
+.heart {
+    padding: 20px;
+    /* background-color: red; */
+    width: 100px;
+}

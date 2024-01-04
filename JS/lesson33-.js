@@ -19,10 +19,10 @@
 
 // // псевдо масиви не мають методові push pop  і тд
 
-arr = [1, 2, 3]
+arr = [1, 2, 3];
 
 arr.forEach(function(item, i, arr) {             // item - елемент масива i - номер в списку масива arr - назва самого масива
-	console.log(`${i}: ${item} всередині масива ${arr}`)			// також один з методів як вивести всі елементи масива, ним це можна зробити більш точно
+	console.log(`${i}: ${item} всередині масива ${arr}`);			// також один з методів як вивести всі елементи масива, ним це можна зробити більш точно
 });																	// Break i continue тут непрацюють
 
 
@@ -165,8 +165,8 @@ let strObj = new String(str);
 console.dir([1,2,3]);
 
 const soldier = {
-  health: 400,
-  armor: 100
+	health: 400,
+	armor: 100
 };
 
 const jonh = Object.create(soldier);  // john prototype sordier
@@ -216,13 +216,13 @@ let answer = +prompt('Hello', '');
 let swithcer = null;
 
 if (swithcer) {
-  console.log('working...')
+	console.log('working...');
 }
 
 swithcer = 1;
 
 if (swithcer) {
-  console.log('working...')
+	console.log('working...');
 }
 
 
@@ -232,3 +232,39 @@ console.log(typeof(Boolean('15')));   // Never used
 
 // 3)
 console.log(typeof(!!'123123'));      // Never used
+
+
+// LESSON 40
+
+function createCounter() {
+	let counter = 0;
+
+	// eslint-disable-next-line no-unused-vars
+	const myFunction = function() {
+		counter = counter + 1;
+		return counter;
+    
+	};
+	return myFunction;
+}
+
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
+
+
+console.log(c1, c2, c3);
+
+
+const result = getSum(5, 6);
+const getSum = function(a, b) {
+	return a + b;
+};
+
+getSum(result);
+
+console.log([] + false + null + true);
+console.log(2 && 0 && 2); // Always return first FALSE value
+
+console.log( +'infinity');
